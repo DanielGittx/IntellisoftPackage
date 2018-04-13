@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="IntellisoftEmployeeManagement">
+  <ClassDiagramComponents>
+    <Class name="EmployeeDetails" package="intellisoftemployeemanagement" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="firstname" type="String" visibility="private"/>
+        <Field name="lastname" type="String" visibility="private"/>
+        <Field name="dateofBirth" type="LocalDate" visibility="package"/>
+        <Field name="employeeID" type="int" visibility="private"/>
+        <Field name="employeeAddress" type="int" visibility="private"/>
+        <Field name="contractSignedDate" type="LocalDate" visibility="package"/>
+        <Field name="contractExpiryDate" type="LocalDate" visibility="package"/>
+        <Field name="contractType" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getLastname" returnType="String" visibility="public"/>
+        <Method name="setLastname" returnType="void" visibility="public">
+          <Argument type="String" name="lastname"/>
+        </Method>
+        <Method name="getDateofBirth" returnType="LocalDate" visibility="public"/>
+        <Method name="setDateofBirth" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="dateofBirth"/>
+        </Method>
+        <Method name="getEmployeeID" returnType="int" visibility="public"/>
+        <Method name="setEmployeeID" returnType="void" visibility="public">
+          <Argument type="int" name="employeeID"/>
+        </Method>
+        <Method name="getEmployeeAddress" returnType="int" visibility="public"/>
+        <Method name="setEmployeeAddress" returnType="void" visibility="public">
+          <Argument type="int" name="employeeAddress"/>
+        </Method>
+        <Method name="getContractSignedDate" returnType="LocalDate" visibility="public"/>
+        <Method name="setContractSignedDate" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="contractSignedDate"/>
+        </Method>
+        <Method name="getContractExpiryDate" returnType="LocalDate" visibility="public"/>
+        <Method name="setContractExpiryDate" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="contractExpiryDate"/>
+        </Method>
+        <Method name="getContractType" returnType="String" visibility="public"/>
+        <Method name="setContractType" returnType="void" visibility="public">
+          <Argument type="String" name="contractType"/>
+        </Method>
+        <Method name="getFirstname" returnType="String" visibility="public"/>
+        <Method name="setFirstname" returnType="void" visibility="public">
+          <Argument type="String" name="firstname"/>
+        </Method>
+        <Method name="insertDates" returnType="void" visibility="public">
+          <Argument type="Integer" name="key"/>
+          <Argument type="LocalDate" name="value"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="IntellisoftEmployeeManagement" package="intellisoftemployeemanagement" visibility="public" xPosition="561.0" yPosition="43.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Maps" package="intellisoftemployeemanagement" visibility="public" xPosition="592.0" yPosition="263.0">
+      <Methods/>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="intellisoftemployeemanagement.IntellisoftEmployeeManagement" target="intellisoftemployeemanagement.Maps"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="intellisoftemployeemanagement.EmployeeDetails" target="intellisoftemployeemanagement.Maps"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
